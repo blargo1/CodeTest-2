@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Code Test #2</title>
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/angular-toastr/dist/angular-toastr.css" />
+    <!-- endbower -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/app/styles/styles.css">
+    <!-- endinject -->
+</head>
+<div class="container">
+
+    <body onload="animate_string('scroll')">
+        <div class="row">
+            <h1 class="col-md-3">Code Test #2</h1>
+        </div>
+        <!--Javascript Date and time display: This Works!-->
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <h2 class="panel-title">JavaScript Display current date and time</h2>
+            </div>
+            <div class="panel-body" id="date" id="day">
+                Display time and date here
+            </div>
+        </div>
+        <!--Scroll the string 'Origin Code Academy Rocks!' from left to right: This shit rocks!-->
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <h3 class="panel-title">Scroll the string 'Origin Code Academy Rocks!</h3>
+            </div>
+            <div class="panel-body">
+                <pre id="scroll">
+            	Origin Code Academy Rocks!
+            </pre>
+            </div>
+        </div>
+        <!--Bubble sort function: This Works!-->
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <h3 class="panel-title">Bubble Sort</h3>
+            </div>
+            <div class="panel-body">
+                <div id="result"></div>
+            </div>
+        </div>
+        <!--Make the first word of each element bold: This works!-->
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <h3 class="panel-title">Make the first word of each element bold</h3>
+            </div>
+            <!--<div class="panel-body">-->
+            <div id="bold">
+                <h5>Beach Towel</h5>
+                <h5>Suntan Lotion</h5>
+                <h5>Mask, Fins and Snorkel</h5>
+                <h5>Boogie Board</h5>
+            </div>
+        </div>
+        <!--Attach a click and a double-click event to the <p> element: This works!-->
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <h3 class="panel-title">Attach a click and a double-click event to the (p) element</h3>
+            </div>
+            <div class="panel-body">
+                <body2>
+                    <p>Click me!</p>
+                </body2>
+            </div>
+        </div>
+        <!--Click button to change text color of paragraph: This works!-->
+        <div class="panel panel-danger">
+            <div class="panel-heading">
+                <h3 class="panel-title">Click the button to change the background color of paragraph</h3>
+            </div>
+            <div class="panel-body" style="background-color:red" id="div1">
+                <p>Click the button to change the background color.</p>
+                <button class="">Change Background Color</button>
+            </div>
+        </div>
+        <!--ANGULARjs Question-->
+        <div class="panel panel-danger">
+            <div class="panel-heading">
+                <h3 class="panel-title">Angularjs Questions</h3>
+            </div>
+            <div class="panel-body" style="background-color:lightgreen">
+                <p>Question: How do you define an AngularJS application?</p>
+                <P>Answer: An Angular module defines the application, which is a container for different parts like controllers, factorys, services. The ng-app directive is used to specify the name of the application module and is required for all Angularjs applications.</P>
+                <br>
+                <p>Question: What is a controller?</p>
+                <P>Answer: Angularjs controller/s control the data of Angularjs applications and are defined using the ng-controller directive in both html and in .js file/s.</P>
+                <br>
+                <p>Question: What does ng-model do?</p>
+                <P>Answer: Built in directive, binds an input, select, textarea to a property on the scope using NgModelController, which is created and exposed by this directive. ngModel is responsible for: Binding the view into the model. The model is the data shown to the user in the view and with which the user interacts. </P>
+                <br>
+                <p>Question: What is interpolation markup?</p>
+                <P>Answer: Interpolation markup with embedded expressions is used by Angular to provide data-binding to text nodes and attribute values. Example: ng-href="img/{{username}}.jpg">Hello {{username}}
+                <br>
+                <p>Question: What is $scope?</p>
+                <P>Answer: Scope is a special javascript object which helps join a controller with views. The scope contains the model data. Within the controller this model data can be accessed using the $scope obj</P>
+                <br>
+                <p>Question: What is dependency injection?</p>
+                <P>Answer: Built in mechanism that can be used with the following components:
+                	Service, factory, provider, constant, value. Each of these components can be injected into each other as dependencies.       		
+                </P>
+                <br>
+                <p>Question: What is two-way binding?</p>
+                <P>Answer: Data binding synchonizes data between between the model and the view.</P>
+                <br>
+                <p>Question: What is 'controller as' syntax?</p>
+                <P>Answer: Eliminates $scope as a dependency. This cleans up our controller a bit.</P>
+                <br>
+                <p>Question: What is MV* architecture?</p>
+                <P>Answer: Part of Model–view–controller (MVC) is a software design pattern for implementing user interfaces on computers. The model represents the data, and does nothing else. The model does NOT depend on the controller or the view.
+The view displays the model data, and sends user actions (e.g. button clicks) to the controller. The view can:
+be independent of both the model and the controller; or
+actually be the controller, and therefore depend on the model. This architecture has become popular for designing web applications.</P>
+                <br>
+                <p>Question: What is the difference between a service and a factory?</p>
+                <P>Answer: A service is a constructor function, however, that doesn’t prevent us from doing additional work and return object literals. A Factory returns an object, says we can run code before we return our object literal.</P>
+            </div>
+        </div>
+</div>
+<!--Div closing for container-->
+<!-- bower:js -->
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular-toastr/dist/angular-toastr.tpls.js"></script>
+<!-- endbower -->
+<!--h1>HEY You</h1-->
+<!-- inject:js -->
+<script src="/app/app.js"></script>
+<!-- endinject -->
+</body>
+
+</html>
